@@ -47,6 +47,7 @@ public class Shooter : MonoBehaviour
             if (rb != null)
             {
                 rb.velocity = transform.up * ProjectileSpeed;
+                Debug.Log("Fired!!");
             }
             Destroy(instance, ProjectiletimePeriod);
             yield return new WaitForSeconds(FireRate);

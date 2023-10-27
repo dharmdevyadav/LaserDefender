@@ -430,6 +430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hero
       objectReference: {fileID: 0}
+    - target: {fileID: 8760754782643229174, guid: 27fc53f89cbaab148ae7f38e7a8eefcb, type: 3}
+      propertyPath: ProjectilePrefeb
+      value: 
+      objectReference: {fileID: 5129101407237442782, guid: 31e6e0760b20c474cb54262024f46359, type: 3}
     - target: {fileID: 8842240622809724827, guid: 27fc53f89cbaab148ae7f38e7a8eefcb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.13

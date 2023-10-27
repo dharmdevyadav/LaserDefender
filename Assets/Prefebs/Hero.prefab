@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c97820ebffe93b45a4bf5d56c3f3299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 18
   PaddingLeft: 0.5
   PaddingRight: 0.5
   PaddingTop: 5
@@ -181,10 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f674843aeaf896a4ea7fa6abb332ae4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectilePrefeb: {fileID: 5129101407237442782, guid: f6fe3614f66c55542acce4dc069d8981, type: 3}
+  ProjectilePrefeb: {fileID: 5129101407237442782, guid: 31e6e0760b20c474cb54262024f46359, type: 3}
   ProjectileSpeed: 21.4
-  ProjectiletimePeriod: 2
-  FireRate: 0.3
+  ProjectiletimePeriod: 1.76
+  FireRate: 0.2
   isFiring: 0
 --- !u!114 &3920125060004881342
 MonoBehaviour:
