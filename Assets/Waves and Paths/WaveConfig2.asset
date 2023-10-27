@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WaveConfig2
   m_EditorClassIdentifier: 
   enemyPrefebs:
-  - {fileID: 3693183878997096800, guid: 79959d3d78709ce49ae416e7871904b7, type: 3}
-  - {fileID: 3693183878997096800, guid: 79959d3d78709ce49ae416e7871904b7, type: 3}
-  - {fileID: 3693183878997096800, guid: 79959d3d78709ce49ae416e7871904b7, type: 3}
+  - {fileID: 5238440085828406935, guid: 16c447c1a4b0e0340aa2b690efbd9e51, type: 3}
+  - {fileID: 3693183878997096800, guid: 22690f7789dbf974694ff7065df0eec2, type: 3}
+  - {fileID: 5238440085828406935, guid: 16c447c1a4b0e0340aa2b690efbd9e51, type: 3}
   pathPrefeb: {fileID: 6721515188867678072, guid: 678714440466ca745a159e6dfd437195, type: 3}
   WaveSpeed: 5
   timeBetweenEnemySpawn: 1.3

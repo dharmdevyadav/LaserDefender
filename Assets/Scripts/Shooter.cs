@@ -28,6 +28,7 @@ public class Shooter : MonoBehaviour
         if(isFiring && Firecoroutine ==null)
         {
             Firecoroutine = StartCoroutine(FireContinuously());
+            Debug.Log("Started.");
         }
         else if(!isFiring && Firecoroutine!=null)
         {
