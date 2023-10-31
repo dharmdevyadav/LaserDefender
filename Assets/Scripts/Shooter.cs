@@ -9,6 +9,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject ProjectilePrefeb;
     [SerializeField] float ProjectileSpeed = 20f;
     [SerializeField] float ProjectiletimePeriod =5f;
+<<<<<<< HEAD
     [SerializeField] float baseFireRate = 0.3f;
     Coroutine Firecoroutine;
     [HideInInspector]public bool isFiring;
@@ -22,9 +23,29 @@ public class Shooter : MonoBehaviour
         {
             isFiring = true;
         }
+=======
+    [SerializeField] float baseFiringRate = 0.3f;
+    Coroutine Firecoroutine;
+    [HideInInspector]public bool isFiring;
+
+    [Header("AI")]
+    [SerializeField] bool useAI;
+    [SerializeField] float firingRateVariance = 0f;
+    [SerializeField] float minimumFiringRate = 0.1f;
+
+
+    void Start()
+    {
+        if (useAI)
+        {
+            isFiring = true;
+        }
+
+
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
     }
 
-   
+
     void Update()
     {
         Fire();
@@ -58,10 +79,21 @@ public class Shooter : MonoBehaviour
             }
             Destroy(instance, ProjectiletimePeriod);
 
+<<<<<<< HEAD
             float timeTONextProjectile = UnityEngine.Random.Range(baseFireRate - FiringRateVariance, baseFireRate + FiringRateVariance);
             timeTONextProjectile = Mathf.Clamp(timeTONextProjectile,MinimumFireRate,float.MaxValue);
 
             yield return new WaitForSeconds(timeTONextProjectile);
+=======
+            float timeToNextProjectile = UnityEngine.Random.Range(baseFiringRate - firingRateVariance,
+                                            baseFiringRate + firingRateVariance);
+            timeToNextProjectile = Mathf.Clamp(timeToNextProjectile, minimumFiringRate, float.MaxValue);
+
+            yield return new WaitForSeconds(timeToNextProjectile);
+
+
+           
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
         }
         
     }

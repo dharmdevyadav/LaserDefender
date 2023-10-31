@@ -6,13 +6,32 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float health = 50f;
+    [SerializeField] ParticleSystem hitEffect;
+
+    [SerializeField] bool applyCameraShake;
+    CameraShake cameraShake;
+
+    void Awake()
+    {
+        cameraShake=Camera.main.GetComponent<CameraShake>();    
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
         if(damageDealer != null)
         {
             TakeDamage(damageDealer.GetDamage());
+            PlayHitEffect();
+            ShakeCamera();
             damageDealer.Hit();
+        }
+    }
+
+    void ShakeCamera()
+    {
+        if(cameraShake!=null&& applyCameraShake)
+        {
+            cameraShake.Play();         
         }
     }
 
@@ -23,6 +42,18 @@ public class Health : MonoBehaviour
         {
             Destroy(gameObject);
             
+<<<<<<< HEAD
+=======
+        }
+    }
+
+    void PlayHitEffect()
+    {
+        if (hitEffect != null)
+        {
+            ParticleSystem instance = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(instance.gameObject, instance.main.duration+ instance.main.startLifetime.constantMax);
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
         }
     }
 }

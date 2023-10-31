@@ -98,7 +98,11 @@ GameObject:
   - component: {fileID: 9051397863948716823}
   - component: {fileID: -3702277868375183781}
   - component: {fileID: -2579520727724471472}
+<<<<<<< HEAD
   - component: {fileID: 486553709047852573}
+=======
+  - component: {fileID: 5492027228016378692}
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
   m_Layer: 7
   m_Name: enemy 2
   m_TagString: Untagged
@@ -248,6 +252,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.04233861}
   serializedVersion: 2
   m_Radius: 0.3417964
+<<<<<<< HEAD
+=======
+--- !u!114 &1887453076522084422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238440085828406935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2937365c8dbfe82439837694cacca394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
 --- !u!114 &-2579520727724471472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,8 +280,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9222ffab5a929244b8c3fb21ccae054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   health: 50
 --- !u!114 &486553709047852573
+=======
+  health: 25
+  hitEffect: {fileID: 757472114046273619, guid: fdf88fdc1303c9b4a98221c55560ea98, type: 3}
+--- !u!114 &5492027228016378692
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,9 +301,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProjectilePrefeb: {fileID: 5129101407237442782, guid: f6fe3614f66c55542acce4dc069d8981, type: 3}
   ProjectileSpeed: 10
+<<<<<<< HEAD
   ProjectiletimePeriod: 2
   baseFireRate: 1.8
   isFiring: 1
   UseAI: 1
   FiringRateVariance: 0.7
   MinimumFireRate: 0.2
+=======
+  ProjectiletimePeriod: 5
+  baseFiringRate: 1.5
+  isFiring: 0
+  useAI: 1
+  firingRateVariance: 0.5
+  minimumFiringRate: 0.1
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3

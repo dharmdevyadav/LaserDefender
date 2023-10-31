@@ -98,7 +98,11 @@ GameObject:
   - component: {fileID: -6191853649762583612}
   - component: {fileID: -1971487403799228674}
   - component: {fileID: 1551106462708018607}
+<<<<<<< HEAD
   - component: {fileID: 5894813940518177875}
+=======
+  - component: {fileID: -179484190372076947}
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
   m_Layer: 7
   m_Name: enemy 0
   m_TagString: Untagged
@@ -260,8 +264,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9222ffab5a929244b8c3fb21ccae054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   health: 50
 --- !u!114 &5894813940518177875
+=======
+  health: 25
+  hitEffect: {fileID: 757472114046273619, guid: fdf88fdc1303c9b4a98221c55560ea98, type: 3}
+--- !u!114 &-179484190372076947
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,9 +285,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProjectilePrefeb: {fileID: 5129101407237442782, guid: f6fe3614f66c55542acce4dc069d8981, type: 3}
   ProjectileSpeed: 10
+<<<<<<< HEAD
   ProjectiletimePeriod: 2
   baseFireRate: 1.3
   isFiring: 1
   UseAI: 1
   FiringRateVariance: 0.8
   MinimumFireRate: 0.2
+=======
+  ProjectiletimePeriod: 5
+  baseFiringRate: 1.5
+  isFiring: 0
+  useAI: 1
+  firingRateVariance: 0.5
+  minimumFiringRate: 0.1
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
