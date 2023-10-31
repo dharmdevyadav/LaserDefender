@@ -184,11 +184,8 @@ MonoBehaviour:
   ProjectilePrefeb: {fileID: 5129101407237442782, guid: 31e6e0760b20c474cb54262024f46359, type: 3}
   ProjectileSpeed: 21.4
   ProjectiletimePeriod: 1.76
-  baseFiringRate: 0.3
+  FireRate: 0.2
   isFiring: 0
-  useAI: 0
-  firingRateVariance: 0
-  minimumFiringRate: 0.1
 --- !u!114 &3920125060004881342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,8 +199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  hitEffect: {fileID: 757472114046273619, guid: fdf88fdc1303c9b4a98221c55560ea98, type: 3}
-  applyCameraShake: 1
 --- !u!114 &-9221371740256163903
 MonoBehaviour:
   m_ObjectHideFlags: 0
