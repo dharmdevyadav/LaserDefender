@@ -41,7 +41,9 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-
+            
+<<<<<<< HEAD
+=======
         }
     }
 
@@ -51,7 +53,7 @@ public class Health : MonoBehaviour
         {
             ParticleSystem instance = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(instance.gameObject, instance.main.duration+ instance.main.startLifetime.constantMax);
-
+>>>>>>> e1d3feaebcfebf39a6785d161f217fa3552774e3
         }
     }
 }
