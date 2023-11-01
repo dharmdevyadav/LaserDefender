@@ -14,7 +14,7 @@ public class DamageDealer : MonoBehaviour
     public void Hit()
     {
         Destroy(gameObject);
-        Debug.Log("Hitted");
+        //Debug.Log("Hitted");
     }
     
     
