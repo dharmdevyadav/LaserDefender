@@ -4,21 +4,43 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    int Score;
+    int score;
+
+    static ScoreKeeper instance;
+
+    void Awake()
+    {
+        ManageSingleton();
+    }
+
+    void ManageSingleton()
+    {
+
+        if (instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
     public int GetScore()
     {
-        return Score;
+        return score;
     }
 
     public void ModifyScore(int value)
     {
-        Score += value;
-        Mathf.Clamp(Score, 0, int.MaxValue);
-        Debug.Log(Score);
+        score += value;
+        Mathf.Clamp(score, 0, int.MaxValue);
+        
     }
 
     public void ResetScore()
     {
-        Score = 0;
+        score = 0;
     }
 }
