@@ -22,7 +22,6 @@ public class AudioPlayer : MonoBehaviour
 
     void ManageSingleton()
     {
-
         if (instance != null)
         {
             gameObject.SetActive(false);
@@ -34,6 +33,8 @@ public class AudioPlayer : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+
+
 
     public void PlayshootingClip()
     {

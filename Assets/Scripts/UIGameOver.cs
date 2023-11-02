@@ -12,10 +12,12 @@ public class UIGameOver : MonoBehaviour
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
+
     void Start()
     {
-        scoreText.text ="You Scored:\n" +scoreKeeper.GetScore();
+        scoreText.text = "You Scored:\n" + scoreKeeper.GetScore();
     }
 
-    
+
+
 }

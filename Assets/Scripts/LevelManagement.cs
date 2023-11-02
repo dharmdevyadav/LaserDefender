@@ -12,13 +12,12 @@ public class LevelManagement : MonoBehaviour
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
+
     public void LoadGame()
     {
-        SceneManager.LoadScene("Game");
         scoreKeeper.ResetScore();
-        //Debug.Log("Reseted.");
-
-        
+        SceneManager.LoadScene("Game");
+           
     }
 
     public void LoadMainMenu()
