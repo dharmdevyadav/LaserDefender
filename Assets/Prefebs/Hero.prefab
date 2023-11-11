@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 573463224365381640}
   - component: {fileID: 7358835637902793079}
   - component: {fileID: 8760754782643229174}
+  - component: {fileID: 3920125060004881342}
   - component: {fileID: -9221371740256163903}
-  - component: {fileID: -2079578647990113883}
   m_Layer: 6
   m_Name: Hero
   m_TagString: Untagged
@@ -184,11 +184,21 @@ MonoBehaviour:
   ProjectilePrefeb: {fileID: 5129101407237442782, guid: 31e6e0760b20c474cb54262024f46359, type: 3}
   ProjectileSpeed: 21.4
   ProjectiletimePeriod: 1.76
-  baseFiringRate: 0.2
-  useAI: 0
-  firingRateVariance: 0
-  minimumFiringRate: 0.1
+  FireRate: 0.2
   isFiring: 0
+--- !u!114 &3920125060004881342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7908435686580495020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9222ffab5a929244b8c3fb21ccae054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!114 &-9221371740256163903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,18 +229,3 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &-2079578647990113883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7908435686580495020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9222ffab5a929244b8c3fb21ccae054, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
-  hitEffect: {fileID: 4415195883221344928, guid: 461c3b69f33506346a6585ef2aa73e93, type: 3}
-  applyCameraShake: 1
