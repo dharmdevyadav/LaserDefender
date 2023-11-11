@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 18
-  PaddingLeft: 0.5
-  PaddingRight: 0.5
+  PaddingLeft: 0.58
+  PaddingRight: 0.58
   PaddingTop: 5
   PaddingBottom: 2
 --- !u!50 &573463224365381640
@@ -184,7 +184,10 @@ MonoBehaviour:
   ProjectilePrefeb: {fileID: 5129101407237442782, guid: 31e6e0760b20c474cb54262024f46359, type: 3}
   ProjectileSpeed: 21.4
   ProjectiletimePeriod: 1.76
-  FireRate: 0.2
+  baseFiringRate: 0.2
+  useAI: 0
+  firingRateVariance: 0
+  minimumFiringRate: 0.1
   isFiring: 0
 --- !u!114 &3920125060004881342
 MonoBehaviour:
@@ -198,7 +201,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9222ffab5a929244b8c3fb21ccae054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 1
   health: 50
+  Score: 50
+  hitEffect: {fileID: 6073722439143918430, guid: 9a34076d2ce31d3428d7874fd07a74fb, type: 3}
+  applyCameraShake: 1
 --- !u!114 &-9221371740256163903
 MonoBehaviour:
   m_ObjectHideFlags: 0
